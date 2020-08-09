@@ -1,0 +1,21 @@
+.Button {
+    @mixin button var(--greyPrimaryColor);
+
+    &:disabled {
+        background: var(--greyBaseColor);
+        cursor: default;
+    }
+
+    &.Button--secondary {
+        @mixin button var(--redPrimaryColor);
+    }
+
+    &.Button--outline {
+        color: var(--blackPrimaryColor);
+        background: none;
+    }
+
+    &.Button--clear {
+        @mixin resetButtonStyles;
+    }
+}

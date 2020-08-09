@@ -1,0 +1,22 @@
+@define-mixin resetButtonStyles {
+    width: unset;
+    height: unset;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+@define-mixin button $color {
+    @mixin b3;
+    max-width: 100%;
+    cursor: pointer;
+    color: var(--whiteColor);
+    background: $color;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    border: 1px solid $color;
+    border-radius: 20px;
+    padding: 16px 30px;
+}
