@@ -1,15 +1,14 @@
 import classNames from "classnames";
+import './Button.css';
 import * as React from "react";
 import { MouseEventHandler } from "react";
-import './Button.css';
 
 export enum ButtonType {
-  Primary,
-  Secondary,
+  Default,
+  Inverted,
+  Modified,
   Outline,
-  Icon,
-  Custom,
-  IconAndText,
+  Nav,
   Clear,
 }
 
@@ -26,7 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   disabled = false,
   onClick,
-  type = ButtonType.Primary,
+  type = ButtonType.Default,
   className,
 }) => {
   return (
@@ -35,8 +34,11 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       className={classNames(
         "Button",
-        { "Button--secondary": type === ButtonType.Secondary },
+        { "Button--default": type === ButtonType.Default },
+        { "Button--inverted": type === ButtonType.Inverted },
+        { "Button--modified": type === ButtonType.Modified },
         { "Button--outline": type === ButtonType.Outline },
+        { "Button--nav": type === ButtonType.Nav},
         { "Button--clear": type === ButtonType.Clear },
         className
       )}
