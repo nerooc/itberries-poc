@@ -17,10 +17,8 @@
 
 .Button {
     background-color: transparent;
-
     position: relative;
     overflow: hidden;
-    top: 200px;
     padding: 10px 20px;
     font-family: 'Varela', sans-serif;
     color: #B4B5B7;
