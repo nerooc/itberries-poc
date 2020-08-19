@@ -122,11 +122,24 @@
     background-color: #8845E8;
     border-radius: 45px;
     transition: 0.2s linear;
-
 }
 
 .Button--modified:hover{
     text-align: center;
     background-color: #7d27f5;
+}
+
+/* BUTTON OUTLINE */
+
+.Button--outline{
+    text-align: center;
+    background-color: transparent;
+    border: solid 2px #8845E8;
     border-radius: 45px;
+    transition: 0.2s linear;
+}
+
+.Button--outline:hover{
+    text-align: center;
+    background-color: #8845E8;
 }
