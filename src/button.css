@@ -171,7 +171,8 @@
     width: 50%;
 }
 
-/* BUTTON cLEAR */
+/* BUTTON CLEAR */
+
 .Button--clear{
     width: unset;
     height: unset;
