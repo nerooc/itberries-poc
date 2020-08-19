@@ -24,33 +24,33 @@ function App() {
                     <Button
                         type={0}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON DEFAULT</Button>
+                        alert("Default Button")
+                    }}>default</Button>
                     <Button
                         type={1}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON INVERTED</Button>
+                        alert("Inverted Def. Button")
+                    }}>inverted</Button>
                     <Button
                         type={2}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON MODIFIED</Button>
+                        alert("Modified Button")
+                    }}>modified</Button>
                     <Button
                         type={3}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON OUTLINE</Button>
+                        alert("Outline Button")
+                    }}>outline</Button>
                     <Button
                         type={4}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON NAV</Button>
+                        alert("Nav Button")
+                    }}>nav</Button>
                     <Button
                         type={5}
                         onClick={() => {
-                        alert("test message")
-                    }}>TEST BUTTON CLEAR</Button>
+                        alert("Clear Button")
+                    }}>clear</Button>
                 </div>
             </header>
         </div>

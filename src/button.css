@@ -1,32 +1,31 @@
-* {
-    background: none repeat scroll 0 0 transparent;
-    border: medium none;
-    border-spacing: 0;
-    color: #26589F;
-    font-family: 'PT Sans Narrow',sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.42rem;
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    text-decoration: none;
-    text-indent: 0;
-}
-
+/* BUTTON */
+ 
 .Button {
-    background-color: transparent;
     position: relative;
     overflow: hidden;
     padding: 10px 20px;
     font-family: 'Varela', sans-serif;
-    color: #B4B5B7;
-    border-radius: 5px;
+    color: white;
     transition: 0.3s linear 0.3s;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.Button::before {
+.Button:hover {
+    cursor: pointer;
+}
+
+/* BUTTON DEFAULT */
+
+.Button--default{
+    text-align: left;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.Button--default::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -40,7 +39,7 @@
     box-sizing: border-box;
 }
 
-.Button::after {
+.Button--default::after {
     content: "";
     position: absolute;
     height: 0;
@@ -54,20 +53,64 @@
     box-sizing: border-box;
 
 }
-.Button:hover {
-    cursor: pointer;
-}
-.Button:hover::before {
+
+.Button--default:hover::before {
     height: 100%;
     width: 100%;
 }
-.Button:hover::after {
+
+.Button--default:hover::after {
     height: 100%;
     width: 100%;
     border-right: 3px solid #8845E8;
     border-top: none;
 }
 
-.Button--nav {
-    
+/* BUTTON INVERTED */
+
+.Button--inverted{
+    text-align: right;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.Button--inverted::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    border: 3px solid #8845E8;
+    border-left: none;
+    border-bottom: none;
+    bottom: 0;
+    right: 0;
+    transition: 0.2s linear;
+    box-sizing: border-box;
+}
+
+.Button--inverted::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 50%;
+    border: 3px solid #8845E8;
+    border-left: none;
+    border-top: none;
+    bottom: 0;
+    right: 0;
+    transition: width 0.1s linear, height 0.1s linear 0.1s;
+    box-sizing: border-box;
+
+}
+
+.Button--inverted:hover::before {
+    height: 100%;
+    width: 100%;
+}
+
+.Button--inverted:hover::after {
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid #8845E8;
+    border-top: none;
 }
