@@ -1,0 +1,11 @@
+@mixin button{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-family: 'Varela', sans-serif;
+    color: white;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 16px;
+    font-weight: normal;
+}
