@@ -11,38 +11,38 @@ function App() {
                 <p>
                     itberries.pl buttons:
                 </p>
-                
+
                 <div className="button--test">
                     <Button
                         type={0}
                         onClick={() => {
                         alert("Default Button")
-                    }}>default</Button>
+                    }}>Default</Button>
                     <Button
                         type={1}
                         onClick={() => {
                         alert("Inverted Def. Button")
-                    }}>inverted</Button>
+                    }}>Inverted</Button>
                     <Button
                         type={2}
                         onClick={() => {
                         alert("Modified Button")
-                    }}>modified</Button>
+                    }}>Modified</Button>
                     <Button
                         type={3}
                         onClick={() => {
                         alert("Outline Button")
-                    }}>outline</Button>
+                    }}>Outline</Button>
                     <Button
                         type={4}
                         onClick={() => {
                         alert("Nav Button")
-                    }}>nav</Button>
+                    }}>Nav</Button>
                     <Button
                         type={5}
                         onClick={() => {
                         alert("Clear Button")
-                    }}>clear</Button>
+                    }}>Clear</Button>
                 </div>
             </header>
         </div>
