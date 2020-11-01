@@ -1,3 +1,24 @@
+# `itberries.pl - Button pack`
+
+Button component that allows the user to choose one type of the set.
+
+Button types:
+- Default
+- Inverted
+- Modified
+- Outline
+- Nav
+- Clear
+
+## Tech stack
+- Typescript
+- React
+- SCSS
+
+![alt text](https://github.com/nerooc/itberries-poc/blob/master/images/preview.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
